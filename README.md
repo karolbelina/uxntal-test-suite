@@ -5,6 +5,7 @@ Test suite for the [Uxntal][uxntal] programming language, intended to be ran by 
 ## Structure
 
 ```
+.
 ├── test1
 │   ├── input.tal
 │   └── output.rom
@@ -23,7 +24,7 @@ Test suite for the [Uxntal][uxntal] programming language, intended to be ran by 
 
 Every directory with an `input.tal` file is a valid test case. The `input.tal` file should be passed as an input to the tested assembler. If the `output.rom` file is present in the same directory, it should be compared with the actual output of the assembler. If there is no `output.rom` file in the same directory, the test case expects no output &mdash; possibly because of an error, or specifically a non-zero exit code from the assembler.
 
-The test case directory can contain more than one `.tal` file in case they are included (directly or indirectly) in the `input.tal` file with Uxntal's `include` keyword. Besides `.tal` files and the `output.rom` file, the test case directory can contain other files which are supposed to be ignored.
+The test case directory can contain more than one `.tal` file in case they are included (directly or indirectly) in the `input.tal` file with Uxntal's `include` keyword. Besides `.tal` files and the `output.rom` file, the test case directory can contain other files which should be ignored by the test runner.
 
 `.tal` files are regular plain text files. `output.rom` files are binary files and are meant to be viewed and edited in hex editors. The rationale behind keeping expected output as a binary file instead of a serialized plain text file is the ease of comparing the actual and expected output byte by byte without the need of serializing or deserializing anything.
 
