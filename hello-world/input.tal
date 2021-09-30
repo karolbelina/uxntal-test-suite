@@ -1,0 +1,18 @@
+( dev/console )
+
+|18 @Console/write
+
+( init )
+
+|0100 ( -> )
+	
+	;hello-world 
+
+	&loop
+		( send ) LDAk .Console/write DEO
+		( loop ) INC2 LDAk ,&loop JCN
+	POP2
+	
+BRK
+
+@hello-world "Hello 20 "World!
