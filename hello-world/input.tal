@@ -1,6 +1,6 @@
 ( dev/console )
 
-|18 @Console/write
+|10 @Console [ &pad $8 &write ]
 
 ( init )
 
