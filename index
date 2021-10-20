@@ -10,5 +10,14 @@
 ./instructions/invalid-mnemonic
 ./instructions/uppercase-mode
 ./empty
+./raw-numbers/bytes
+./raw-numbers/shorts
+./raw-numbers/uneven-length/three
+./raw-numbers/uneven-length/one
+./raw-numbers/invalid-digits/short
+./raw-numbers/invalid-digits/byte
+./raw-numbers/too-long
+./raw-numbers/uppercase-digits/short
+./raw-numbers/uppercase-digits/byte
 ./hello-world
 ./data-on-zeroth-page/single-byte
