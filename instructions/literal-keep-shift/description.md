@@ -1,0 +1,1 @@
+The `LIT` mnemonic without any modes becomes opcode 80 to distinguish it from the `BRK` mnemonic. This essentially turns it into a `LITk`, but it works like a regular `LIT` since the keep mode for `LIT`s is ignored by Uxn.
